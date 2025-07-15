@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  -->
+    <h1> Form Input </h1>
+    <form>
+        <!-- label -->
+        <div>
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email">
+            <!-- input type email kadang error, perlu handling 
+             dari segi codenya -->
+        </div>
+        <div>
+            <label for="password"> password</label>
+             <input type="password" name="pasword" id="password">
+        </div>
+        
+        <!-- horizontal rule -->
+        <hr>
+
+        <!-- placeholder -->
+        <!-- <label for="username" style="visibility: hidden;">username</label> -->
+
+        <input type="text" name="username" placeholder="username"> <br>
+        <input type="password" name="pwd" placeholder="pasword" >
+        
+        <!-- horizontal rule -->
+        <hr>
+
+
+        <!-- input number -->
+        <label for="num">Quantity</label>
+        <input type="number" name="angka" id="num">
+    
+         <!-- horizontal rule -->
+        <hr>
+
+        <!-- input radio -->
+        <label> jenis Kelamin</label> <br>
+        <input type="radio" name="gender" id="1" value="L"> <label for="1"> laki-laki</label>
+        <input type="radio" name="gender" id="p" value="P"> <label for="p"> perempuan</label>
+    
+        <!-- horizontal rule -->
+        <hr>
+
+        <label for=""> Bahasa yang dikuasai</label> <br>
+        <input type="checkbox" name="lang" id="js" value="js"><label for="js">JS</label>
+        <input type="checkbox" name="lang" id="css" value="css"><label for="css">css</label>
+        <input type="checkbox" name="lang" id="html" value="html"><label for="html">HTML</label>
+        <input type="checkbox" name="lang" id="php" value="php"><label for="php">PHP</label>
+
+
+        <!-- horizontal rule -->
+        <hr>
+
+        <!-- dropdown -->
+        <label for="">Bahasa yang dikuasai</label> <br>
+        <select name="lang-drop" id="lang-drop">
+            <option value="" disabled selected></option>
+            <option value="js">JS</option>
+            <option value="css">css</option>
+            <option value="html">html</option>
+            <option value="php">php</option>
+        </select>
+
+         
+        <!-- horizontal rule -->
+        <hr>
+
+        <label for="kns"> keluhan Dan Saran</label> <br>
+        <textarea name="kns" id="kns" cols="50" rows="4" maxlength="100"></textarea>
+        <!-- cols 50 artinya 50 character, dan 2 row 2 line character -->
+        <!-- maxlength maximal panjang character -->
+
+
+        <!-- horizontal rule -->
+        <hr>
+
+        <!-- test date -->
+        <input type="date" name="" id="">
+
+
+        <!-- horizontal rule -->
+        <hr>
+
+        <!-- button -->
+         <button type="submit">Submit</button>
+
+    <!-- Menghubungkan label:for dengan input:id dapat berfungsi membuat
+     label clickable dan terhubung degan inputan tersebut. Ini dapat memudahkan
+     pada input : checkbox dan radio -->
+    </form>
+
+</body>
+</html>
