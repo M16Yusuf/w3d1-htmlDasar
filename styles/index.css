@@ -1,0 +1,97 @@
+/* Reset style */
+/* universal selector menggunakan bintang * */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--primary);
+}
+
+/* custom variable : 
+ex. pada global variable */
+:root {
+    --primary: green;
+}
+
+
+p, span {
+    color: blue;
+}
+
+/* style yang sama bisa digabung */
+/* span {
+    color: blue;
+} */
+
+a {
+    font-size: 24px;
+}
+
+/* a dengan target blank,
+fontnya jadi cursive */
+a[target="_blank"]{
+    font-family: cursive;
+}
+
+
+
+body {
+    background-color: blanchedalmond;
+    /* google font : permanent marker */
+    font-family: "Permanent Marker", cursive;
+}
+/* font boleh di implementasikan di universal atau body */
+
+
+/* selector class */
+/* <p class="big">  */
+.big {
+    font-size: 36px;
+}
+
+/* pseuod element */
+/* styling sebagian element */
+.big::first-letter{
+    font-size: 72px;
+}
+
+
+/* untuk href */
+/* selector ID */
+/*  <a href="" id="link"> */
+#link{
+    color: brown;
+    text-decoration: underline;
+    user-select: none;
+    cursor: pointer;
+}
+
+
+/* pseudo class */
+#link:hover{
+    background-color: azure;
+    color: black;
+}
+a:active{
+    color: transparent;
+}
+
+/* selector complex 
+<div class="box">
+    <h2></h2>
+    <p></p>
+</div> */
+/* jika pake div diawal berarti khusus div
+jika tanpa div class box bisa dipake semua property */
+div.box h2 + p {
+    color: darkmagenta;
+    font-size: 24px;
+
+}
+
+/* 
+"+" artinya direct sibling (children of)
+"~" tilda next sibling of
+" "/space artinya child / turunan
+">" direct child 
+*/

@@ -1,0 +1,81 @@
+body {
+    padding: 4px;
+    background-color: salmon;
+}
+
+body > div:first-child {
+    box-sizing: content-box;
+    width: 300px;
+    border: 2px solid black;
+    margin-bottom: 4px;
+}
+
+body > div:nth-child(2) {
+    box-sizing: border-box;
+    width: 300px;
+    border: 2px solid black;
+}
+
+/* layouting */
+input[type="text"]{
+    padding: 5px;
+    font-family: "permanent Market";
+}
+
+
+/* position */
+section {
+    background-color: aliceblue;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: cornflowerblue;
+    border: 2px solid black;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+section {
+    background-color: aliceblue;
+    margin-top: 5px;
+    padding: 5px;
+    height: 1000px;
+    position: relative;
+    
+}
+
+/* section div class box second div */
+section div.box:nth-child(2) {
+    position: relative;
+    left: 100px;
+    /* right: -100px; */
+}
+/* section div class box third div */
+section div.box:nth-child(3){
+    position:absolute;
+    top: -50px;
+    right: 0;
+}
+
+section div.box:nth-child(4){
+    position: fixed;
+    /* untuk FAB (Floating action Button) */
+    bottom: 0px;
+    right: 0px;
+    /* marginnya kanan bawah aja */
+    margin: 0 5px 5px 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+section div.box:nth-child(5){
+    position: sticky;
+    /* selalu inframe  */
+    top: 10px;
+    bottom: 10px;
+}
